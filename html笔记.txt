@@ -1,0 +1,323 @@
+                   html
+1.HTML5 中的一些有趣的新特性：
+用于绘画的 canvas 元素
+用于媒介回放的 video 和 audio 元素
+对本地离线存储的更好的支持
+  新的特殊内容元素，比如 article、footer、header、nav、section
+  新的表单控件，比如 calendar、date、time、email、url、search
+2.注意：对于中文网页需要使用 <meta charset="utf-8"> 声明编码，否则会出现乱码。有些浏览器会设置 GBK 为默认编码，则你需要设置为 <meta charset="gbk">。
+3.HTML文档的后缀名
+.html
+.htm
+以上两种后缀名没有区别，都可以使用。
+4.注意:HTML中不支持 空格、回车、制表符，它们都会被解析成一个空白字符
+5.第一个例子
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+ 
+<h1>我的第一个标题</h1>
+ 
+<p>我的第一个段落。</p>
+ 
+</body>//只有<body>到</body>区域的内容才会在浏览器中显示
+</html>
+例子解析：
+<!DOCTYPE html> 声明为 HTML5 文档，该声明有助于浏览器中正确显示网页。doctype声明不区分大小写。
+<html> 元素是 HTML 页面的根元素
+<head> 元素包含了文档的元（meta）数据
+<title> 元素描述了文档的标题
+<body> 元素包含了可见的页面内容
+<h1> 元素定义一个大标题
+<p> 元素定义一个段落
+6.HTML 是用来描述网页的一种语言。
+HTML 指的是超文本标记语言: HyperText Markup Language
+HTML 不是一种编程语言，而是一种标记语言
+标记语言是一套标记标签 (markup tag)
+HTML 使用标记标签来描述网页
+HTML 文档包含了HTML 标签及文本内容
+HTML文档也叫做 web 页面。
+HTML 标记标签通常被称为 HTML 标签 (HTML tag)。
+HTML 标签是由尖括号包围的关键词，比如 <html>
+HTML 标签通常是成对出现的，比如 <b> 和 </b>
+标签对中的第一个标签是开始标签，第二个标签是结束标签
+开始和结束标签也被称为开放标签和闭合标签
+一个 HTML 元素包含了开始标签与结束标签，如下实例:<p>这是一个段落。</p>
+7.Web浏览器（如谷歌浏览器，Internet Explorer，Firefox，Safari）是用于读取HTML文件，并将其作为网页显示。
+浏览器并不是直接显示的HTML标签，但可以使用标签来决定如何展现HTML页面的内容给用户
+8.HTML 标题（Heading）是通过<h1> - <h6> 标签来定义的.
+HTML 段落是通过标签 <p> 来定义的.
+HTML 链接是通过标签 <a> 来定义的.
+HTML 图像是通过标签 <img> 来定义的.注意： 图像的名称和尺寸是以属性的形式提供的。
+9.HTML 文档由 HTML 元素定义。
+  HTML 文档由嵌套的 HTML 元素构成。
+开始标签常被称为起始标签（opening tag），结束标签常称为闭合标签（closing tag）。
+10.HTML 元素语法
+HTML 元素以开始标签起始
+HTML 元素以结束标签终止
+元素的内容是开始标签与结束标签之间的内容
+某些 HTML 元素具有空内容（empty content）
+空元素在开始标签中进行关闭（以开始标签的结束而结束）
+大多数 HTML 元素可拥有属性
+11.HTML 空元素
+没有内容的 HTML 元素被称为空元素。空元素是在开始标签中关闭的。
+<br> 就是没有关闭标签的空元素（<br> 标签定义换行）。
+在 XHTML、XML 以及未来版本的 HTML 中，所有元素都必须被关闭。
+在开始标签中添加斜杠，比如 <br />，是关闭空元素的正确方法，HTML、XHTML 和 XML 都接受这种方式。
+即使 <br> 在所有浏览器中都是有效的，但使用 <br /> 其实是更长远的保障。. 标签写法要用小写字母（有些版本对大小写可认为相同，而xhtml中强制使用小写）
+12.HTML 属性
+HTML 元素可以设置属性
+属性可以在元素中添加附加信息
+属性一般描述于开始标签
+属性总是以名称/值对的形式出现，比如：name="value"。
+13.HTML 属性常用引用属性值
+属性值应该始终被包括在引号内。
+双引号是最常用的，不过使用单引号也没有问题。
+提示: 在某些个别的情况下，比如属性值本身就含有双引号，那么您必须使用单引号，例如：name='John "ShotGun" Nelson'尽量使用小写属性
+14.属性	描述
+class	为html元素定义一个或多个类名（classname）(类名从样式文件引入)class 属性可以多用 class=" " （引号里面可以填入多个class属性）
+id	定义元素的唯一id，id 属性只能单独设置 id=" "（只能填写一个，多个无效）
+style	规定元素的行内样式（inline style）
+title	描述了元素的额外信息 (作为工具条使用）
+15.<h1> 定义最大的标题。 <h6> 定义最小的标题。浏览器会自动地在标题的前后添加空行。
+15.标题很重要
+请确保将 HTML 标题 标签只用于标题。不要仅仅是为了生成粗体或大号的文本而使用标题。
+搜索引擎使用标题为您的网页的结构和内容编制索引。
+因为用户可以通过标题来快速浏览您的网页，所以用标题来呈现文档结构是很重要的。
+应该将 h1 用作主标题（最重要的），其后是 h2（次重要的），再其次是 h3，以此类推。
+16.HTML 水平线
+<hr> 标签在 HTML 页面中创建水平线。
+
+hr 元素可用于分隔内容。
+例子：<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+	<p>hr 标签定义水平线：</p>
+	<hr />
+	<p>这是段落。</p>
+	<hr />
+	<p>这是段落。</p>
+	<hr />
+	<p>这是段落。</p>
+</body>
+</html>
+17注释写法举例
+.....
+<body>
+
+<!--这是一个注释，注释在浏览器中不会显示-->
+
+<p>这是一个段落</p>
+
+</body>
+.....
+18.浏览器会自动地在段落的前后添加空行。（</p> 是块级元素）
+19.如果您希望在不产生一个新段落的情况下进行换行（新行），请使用 <br /> 标签：
+例子：<p>这个<br>段落<br>演示了分行的效果</p>
+运行结果：
+这个
+段落
+演示了分行的效果
+20.当显示页面时，浏览器会移除源代码中多余的空格和空行。所有连续的空格或空行都会被算作一个空格。需要注意的是，HTML 代码中的所有连续的空行（换行）也被显示为一个空格。段落的行数依赖于浏览器窗口的大小。如果调节浏览器窗口的大小，将改变段落中的行数。
+21.HTML 使用标签 <b>("bold") 与 <i>("italic") 对输出的文本进行格式, 如：粗体 or 斜体
+这些HTML标签被称为格式化标签
+通常标签 <strong> 替换加粗标签 <b> 来使用, <em> 替换 <i>标签使用。
+然而，这些标签的含义是不同的：
+<b> 与<i> 定义粗体或斜体文本。
+<strong> 或者 <em>意味着你要呈现的文本是重要的，所以要突出显示。
+例子：
+<b>加粗文本</b><br><br>
+<i>斜体文本</i><br><br>
+<code>电脑自动输出</code><br><br>
+这是 <sub> 下标</sub> 和 <sup> 上标</sup>
+<big>这个文本字体放大</big>
+<small>这个文本是缩小的</small>
+<kbd>键盘输入</kbd>//它表示文本是从键盘上键入的。它经常用在与计算机相关的文档或手册中。
+<tt>打字机文本</tt>
+<samp>计算机代码样本</samp>
+<var>计算机变量</var>
+<dfn>定义项目</dfn><br>
+
+22.<pre> 标签可定义预格式化的文本。
+被包围在 <pre> 标签 元素中的文本通常会保留空格和换行符。而文本也会呈现为等宽字体
+提示: <pre> 标签的一个常见应用就是用来表示计算机的源代码。
+23.<address> 标签定义文档作者/所有者的联系信息。
+如果 <address> 元素位于 <body> 元素内部，则它表示该文档作者/所有者的联系信息。
+如果 <address> 元素位于 <article> 元素内部，则它表示该文章作者/所有者的联系信息。
+<address> 元素的文本通常呈现为斜体。大多数浏览器会在该元素的前后添加换行。
+提示：不应该使用 <address> 标签来描述邮政地址，除非这些信息是联系信息的组成部分。
+提示：<address> 元素通常被包含在 <footer> 元素的其他信息中。
+例子：
+<body>
+
+<address>
+Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br> 
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+
+</body>
+运行效果：
+Written by Jon Doe.//点击Jon Doe可以直接进去
+Visit us at:
+Example.com
+Box 564, Disneyland
+USA
+24.<abbr> 标签用来表示一个缩写词或者首字母缩略词，如"WWW"或者"NATO"。
+例子：
+<body>
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+<body>
+运行结果：The WHO was founded in 1948.
+提示：在某些浏览器中，当您把鼠标移至带有 <abbr> 标签的缩写词/首字母缩略词上时，<abbr> 标签的 title 属性可被用来展示缩写词/首字母缩略词的完整版本。
+25.bdo 指的是 bidi 覆盖（Bi-Directional Override）。
+<bdo> 标签用来覆盖默认的文本方向。
+例子：
+<body>
+
+<p>该段落文字从左到右显示。</p>  
+<p><bdo dir="rtl">该段落文字从右到左显示。</bdo></p>  
+
+</body>
+运行结果：
+该段落文字从左到右显示。
+
+。示显左到右从字文落段该
+26.
+<q> 标签定义一个短的引用。
+浏览器经常会在这种引用的周围插入引号。
+例子：
+<body>
+
+<p>WWF's goal is to: 
+<q>Build a future where people live in harmony with nature.</q>
+We hope they succeed.</p>
+
+</body>
+运行结果：
+WWF's goal is to:" Build a future where people live in harmony with nature." We hope they succeed.
+27.提示：<del> 和 <ins> 一起使用，描述文档中的更新和修正。浏览器通常会在已删除文本上添加一条删除线，在新插入文本下添加一条下划线。
+<body>
+
+<p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+
+</body>
+运行结果：My favorite color is blue red!//blue中间有一横线，red底部有一个横线
+28.
+<blockquote> 标签定义摘自另一个源的块引用。
+浏览器通常会对 <blockquote> 元素进行缩进。
+提示：如果标记是不需要段落分隔的短引用，请使用 <q>。
+例子：
+<body>
+
+<h1>About WWF</h1>
+<p>Here is a quote from WWF's website:</p>
+	
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 50 years, WWF has been protecting the future of nature. The world?s leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+</blockquote>
+
+</body>
+运行结果：
+About WWF
+
+Here is a quote from WWF's website:
+
+For 50 years, WWF has been protecting the future of nature. The world?s leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+29.<cite> 标签定义作品（比如书籍、歌曲、电影、电视节目、绘画、雕塑等等）的标题。
+注释：人名不属于作品的标题。
+<body>
+
+<img src="img_the_scream.jpg" width="220" height="277" alt="The Scream">
+<p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+
+</body>
+30.总结
+HTML 文本格式化标签
+标签	描述
+<b>	定义粗体文本
+<em>	定义着重文字
+<i>	定义斜体字
+<small>	定义小号字
+<strong>	定义加重语气
+<sub>	定义下标字
+<sup>	定义上标字
+<ins>	定义插入字
+<del>	定义删除字
+
+HTML "计算机输出" 标签
+标签	描述
+<code>	定义计算机代码
+<kbd>	定义键盘码
+<samp>	定义计算机代码样本
+<var>	定义变量
+<pre>	定义预格式文本
+
+HTML 引文, 引用, 及标签定义
+标签	描述
+<abbr>	定义缩写
+<address>	定义地址
+<bdo>	定义文字方向
+<blockquote>	定义长的引用
+<q>	定义短的引用语
+<cite>	定义引用、引证
+<dfn>	定义一个定义项目。
+31.链接将以以下形式出现在浏览器中：
+一个未访问过的链接显示为蓝色字体并带有下划线。
+访问过的链接显示为紫色并带有下划线。
+点击链接时，链接显示为红色并带有下划线。
+注意：如果为这些超链接设置了 CSS 样式，展示样式会根据 CSS 的设定而显示。
+HTML 链接 - target 属性
+使用 target 属性，你可以定义被链接的文档在何处显示。
+例子：
+<a href="http://www.runoob.com/" target="_blank">访问菜鸟教程!</a>
+
+<p>如果你将 target 属性设置为 &quot;_blank&quot;, 链接将在新窗口打开。</p>//&quot与<q>有同样的效果。
+运行结果：
+访问菜鸟教程!//点击这句话可以跳转到另一个页面。
+如果你将 target 属性设置为 "_blank", 链接将在新窗口打开。
+HTML 链接- id 属性
+id属性可用于创建在一个HTML文档书签标记。
+提示: 书签是不以任何特殊的方式显示，在HTML文档中是不显示的，所以对于读者来说是隐藏的。
+注释： 请始终将正斜杠添加到子文件夹。假如这样书写链接：href="http://www.runoob.com/html"，就会向服务器产生两次 HTTP 请求。这是因为服务器会添加正斜杠到这个地址，然后创建一个新的请求，就像这样：href="http://www.runoob.com/html/"。
+  创建图片连接：
+例子：
+<p>创建图片链接:
+<a href="http://www.runoob.com/html/html-tutorial.html">
+<img  border="10" src="smiley.gif" alt="HTML 教程" width="32" height="32"></a></p>
+
+<p>无边框的图片链接:
+<a href="http://www.runoob.com/html/html-tutorial.html">
+<img border="0" src="smiley.gif" alt="HTML 教程" width="32" height="32"></a></p>
+关于创建电子邮件链接时如何进行抄送，密送.
+在进行抄送时，需要使用关键字：cc
+在进行密送时，需要使用关键字：bcc
+参数	描述
+mailto:name@email.com	邮件接收地址
+cc=name@email.com	抄送地址
+bcc=name@email.com	密件抄送地址
+subject=subject text	邮件主题
+body=body text	邮件内容
+?	第一个参数分隔符
+&	其他参数分隔符
+例子：<a href="mailto:zhangrr601@163.com?subject=这是邮件的主题&body=这是邮件的内容" 
+rel="nofollow">发送邮件</a>
+32.使用 <base> 定义页面中所有链接默认的链接目标地址。
+   使用 <meta> 元素来描述HTML文档的描述，关键词，作者，字符集等。
+33.iframe语法:
+<iframe src="URL"></iframe>
+例子：<iframe src="demo_iframe.htm" width="200" height="200"></iframe>//可以设定页面的宽和高
+frameborder 属性用于定义iframe表示是否显示边框。
+设置属性值为 "0" 移除iframe的边框:
+例子：
+<iframe src="demo_iframe.htm" frameborder="0"></iframe>
